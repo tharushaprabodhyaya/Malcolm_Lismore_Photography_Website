@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header{
+    transition: 0.5s ease;
+}
+.navigation {
+    background-color: #12a13d;
+    padding: 15px;
+    position: relative;
+}
+
+.navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-items ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.navigation-items ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.navigation-items ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    padding: 5px;
+}
+
+.logo {
+    height: 87px;
+    margin: 0 30px;
+}
+  
+.navigation-items ul li a:before{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+  
+.navigation-items ul li a:hover:before{
+    width: 100%;
+}
+
+footer {
+    background-color: #043b1b; /* Dark Green Background */
+    color: white; /* White Text */
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .footer-content {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+  }
+  
+  .footer-content a {
+    color: #4ca2ff; /* Light Blue Link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-content a:hover { 
+    text-decoration: underline;
+  }
+  
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+input{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #11742f;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);    
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.top-content{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(115, 174, 115);
+}
+
+h3{
+    height: 100%;
+    background-color: rgb(61, 194, 85);
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+    border-radius: 7px;
+}
+
+label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: darkgray;
+    cursor: pointer;
+    transition: 5s;
+}
+
+label:hover{
+    color: #11742f;
+    text-decoration: underline;
+    transition: 2s ease;
+}
+
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.photo{
+    position: relative;
+    height: 230px;
+    box-shadow: 2px 2px 4px rgb(115, 174, 115);
+    cursor: pointer;
+    transition: 3s ease;
+}
+
+/* Fullscreen popup styles */
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px rgb(115, 174, 115);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+    transform: scale(1.3);
+    z-index: 1000; 
+    position: relative; 
+    box-shadow: 0 0 20px rgba(35, 141, 30, 0.8); 
+}
+
+/* Galley page tab selection */
+/* Gallery All tab selection */
+#check1:checked ~ .container .photo-gallery .photo{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: 3s;
+}
+
+/* Gallery wedding tab selection */
+#check2:checked ~ .container .photo-gallery .wedding{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check2:checked ~ .container .photo-gallery .preshoot,
+#check2:checked ~ .container .photo-gallery .wildlife,
+#check2:checked ~ .container .photo-gallery .portrait,
+#check2:checked ~ .container .photo-gallery .event{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+/* Gallery preshoot tab selection */
+#check3:checked ~ .container .photo-gallery .preshoot{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check3:checked ~ .container .photo-gallery .wedding,
+#check3:checked ~ .container .photo-gallery .wildlife,
+#check3:checked ~ .container .photo-gallery .portrait,
+#check3:checked ~ .container .photo-gallery .event{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+/* Gallery wildlife tab selection */
+#check4:checked ~ .container .photo-gallery .wildlife{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check4:checked ~ .container .photo-gallery .wedding,
+#check4:checked ~ .container .photo-gallery .preshoot,
+#check4:checked ~ .container .photo-gallery .portrait,
+#check4:checked ~ .container .photo-gallery .event{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+/* Gallery portrait tab selection */
+#check5:checked ~ .container .photo-gallery .portrait{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check5:checked ~ .container .photo-gallery .wedding,
+#check5:checked ~ .container .photo-gallery .preshoot,
+#check5:checked ~ .container .photo-gallery .wildlife,
+#check5:checked ~ .container .photo-gallery .event{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+/* Gallery event tab selection */
+#check6:checked ~ .container .photo-gallery .event{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check6:checked ~ .container .photo-gallery .wedding,
+#check6:checked ~ .container .photo-gallery .preshoot,
+#check6:checked ~ .container .photo-gallery .wildlife,
+#check6:checked ~ .container .photo-gallery .portrait{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+
+

@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+.admin-header {
+    background-color: #11742f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.admin-header nav {
+    margin-top: 10px;
+}
+
+.admin-header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.admin-header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main container styles */
+.admin-container {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #11742f;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #11742f;
+    color: white;
+}
+
+button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button .login {
+    background-color: #009c1d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+/* Login page styles */
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    color: #11742f;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #11742f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0a5c1e;
+}
+
+.header-text {
+    font-size: 20px;
+    color: #11742f;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #043b1b; /* Dark Green Background */
+    color: white; /* White Text */
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .footer-content {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+  }
+
+  

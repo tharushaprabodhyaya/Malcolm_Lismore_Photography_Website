@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  header{
+    transition: 0.5s ease;
+  }
+  .navigation {
+    background-color: #12a13d;
+    padding: 15px;
+    position: relative;
+  }
+  .navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .navigation-items ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .navigation-items ul li {
+    margin: 0 15px;
+    position: relative;
+  }
+  .navigation-items ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    padding: 5px;
+  }
+  .logo {
+    height: 87px;
+    margin: 0 30px;
+  }
+  
+  .navigation-items ul li a:before{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  
+  .navigation-items ul li a:hover:before{
+    width: 100%;
+  }
+
+    /* Contact Us Section Styles */
+  .contact-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+  .contact-us h1 {
+    font-size: 2.5rem;
+    color: #043d19;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-us label {
+    font-weight: bold;
+    color: #043d19;
+    text-align: left;
+  }
+  
+  .contact-us input,
+  .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .contact-us input:focus,
+  .contact-us textarea:focus {
+    border-color: #22cc58; /* Change border color */
+    background-color: #f0fff4; /* Optional: Change background color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #22cc58; /* Add a glowing effect */
+  }
+  
+  .contact-us textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-us .btn {
+    background: linear-gradient(180deg, #05631c, #36e26c);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: semibold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .contact-us .btn:hover {
+    background: linear-gradient(to bottom, #36e26c, #05631c);
+    transform: scale(1.1);
+  }
+  
+
+  footer {
+    background-color: #043b1b; /* Dark Green Background */
+    color: white; /* White Text */
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+  }
+  
+  .footer-content {
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+  }
+  
+  .footer-content a {
+    color: #4ca2ff; /* Light Blue Link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-content a:hover { 
+    text-decoration: underline;
+  }
